@@ -53,12 +53,12 @@ boot.loader.grub.device = "/dev/nvme0n1";
 services.mysql.enable = false;
 services.mysql.package = pkgs.mysql80;
 
-{
+
   virtualisation.docker.enable = true;
 
-  # (Необязательно) добавить пользователя в группу docker
-  users.users.<имя_пользователя>.extraGroups = [ "docker" ];
-}
+
+  users.users.atlas.extraGroups = [ "docker" ];
+
 
 
 services.upower.enable = true;
