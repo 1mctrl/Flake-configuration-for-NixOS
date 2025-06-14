@@ -11,10 +11,10 @@
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
-  fileSystems."/" =
-    { device = "/dev/disk/by-uuid/fd57bb6e-a298-4413-a5fc-316f31ef4698";
-      fsType = "ext4";
-    };
+#  fileSystems."/" =
+ #  { device = "/dev/disk/by-uuid/fd57bb6e-a298-4413-a5fc-316f31ef4698";
+  #    fsType = "ext4";
+  #  };
 
   boot.initrd.luks.devices."luks-0279234d-0e2c-4c97-923b-c45126d4da09".device = "/dev/disk/by-uuid/0279234d-0e2c-4c97-923b-c45126d4da09";
 

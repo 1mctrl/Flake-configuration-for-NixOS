@@ -8,6 +8,22 @@ imports = [
 
 boot.loader.systemd-boot.enable = false;
   boot.loader.efi.canTouchEfiVariables = true;
+
+
+boot.initrd.secrets = {
+  "/crypto_keyfile.bin" = "/etc/nixos/crypto_keyfile.bin";
+};
+
+boot.initrd.luks.devices."luks-0279234d-0e2c-4c97-923b-c45126d4da09" = {
+  device = "/dev/disk/by-uuid/0279234d-0e2c-4c97-923b-c45126d4da09";
+  keyFile = "/crypto_keyfile.bin";
+};
+
+fileSystems."/" = {
+  device = "/dev/mapper/luks-0279234d-0e2c-4c97-923b-c45126d4da09";
+  fsType = "ext4";
+};
+
     
 
 time.timeZone = "Asia/Tashkent";
