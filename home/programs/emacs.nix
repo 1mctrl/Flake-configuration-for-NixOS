@@ -5,7 +5,8 @@
  emacs
   fd
   ripgrep
-  (nerdfonts.override { fonts = [ "JetBrainsMono" "SymbolsOnly" ]; })
+nerdfonts.override { fonts = [ "JetBrainsMono" "NerdFontsSymbolsOnly" ]; }
+
   nodejs
   alejandra
   ];
