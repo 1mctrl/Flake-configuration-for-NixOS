@@ -2,9 +2,12 @@
 
 {
   home.packages = with pkgs; [
-    emacs
-    fd
-    ripgrep
+ emacs
+  fd
+  ripgrep
+  (nerdfonts.override { fonts = [ "JetBrainsMono" "SymbolsOnly" ]; })
+  nodejs
+  alejandra
   ];
 
   home.file.".doom.d/config.el".text = ''
@@ -25,8 +28,8 @@
   home.file.".doom.d/init.el".text = ''
     (doom!
      :completion
-	doom-dashboard  
-    vertico
+     oom-dashboard  
+     vertico
      company
      :ui
      doom
