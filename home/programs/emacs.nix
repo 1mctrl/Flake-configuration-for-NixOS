@@ -4,9 +4,9 @@ let
   doomDir = "${config.home.homeDirectory}/.doom.d";
 in {
   home.packages = with pkgs; [
-    emacs-nativecomp   # Быстрый Emacs с native compilation
-    fd                 # Поиск файлов (рекомендуется для Doom)
-    ripgrep            # Поиск текста (рекомендуется для Doom)
+    emacs
+    fd   
+    ripgrep 
   ];
 
 home.file.".emacs.d".source = pkgs.fetchFromGitHub {
