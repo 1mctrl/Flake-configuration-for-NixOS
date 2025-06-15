@@ -28,7 +28,7 @@ nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-	    #home-manager.backupFileExtension = "backup";
+	    home-manager.backupFileExtension = "backup";
             home-manager.users.atlas = import ./home/atlas.nix;
           }
         ];
