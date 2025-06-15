@@ -11,6 +11,11 @@
     (setq user-full-name "atlas"
           user-mail-address "user@example.com")
 
+
+
+    (setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 14))
+
+
     (setq doom-theme 'doom-one)
     (setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 14))
     (setq-default default-directory "~/")
@@ -20,7 +25,8 @@
   home.file.".doom.d/init.el".text = ''
     (doom!
      :completion
-     vertico
+	doom-dashboard  
+    vertico
      company
      :ui
      doom
