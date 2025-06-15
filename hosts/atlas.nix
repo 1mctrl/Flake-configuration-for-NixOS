@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+f{ config, pkgs, ... }:
 
 {
 imports = [
@@ -102,7 +102,6 @@ environment.systemPackages = with pkgs; [
 	cryptsetup
 	networkmanager
 	clang
-	emacs-nox
 	networkmanager_dmenu
 	
 ];
