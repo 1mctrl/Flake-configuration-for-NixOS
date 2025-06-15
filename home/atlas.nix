@@ -10,10 +10,12 @@
     ./programs/bspwm.nix
     ./programs/sxhkd.nix
     ./programs/xinit.nix    
-    #./programs/picom.nix 
+    ./programs/picom.nix 
     ./programs/fetch.nix
+    ./programs/emacs.nix
+
 
  ];
 
-  home.packages = with pkgs; [ feh  sxhkd  kitty ];
+  home.packages = with pkgs; [ feh  sxhkd  kitty picom ];
 }

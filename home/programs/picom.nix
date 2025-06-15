@@ -48,8 +48,9 @@ log-level = "warn"
 
 
     '';
-    
+  executable = true;    
   };
+
 }
 
 

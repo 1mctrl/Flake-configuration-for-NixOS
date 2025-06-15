@@ -95,7 +95,7 @@ environment.systemPackages = with pkgs; [
 	tree
 	rustc
 	cargo
-	
+	rofi	
 	mariadb
 	gcc
 	jdk17
