@@ -76,7 +76,6 @@ environment.systemPackages = with pkgs; [
 	koreader
 	wget
 	fprintd
-	neovim
 	btop
 	pkgs.pulsemixer
 	pkgs.pamixer

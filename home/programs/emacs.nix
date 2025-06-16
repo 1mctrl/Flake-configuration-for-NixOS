@@ -5,8 +5,8 @@
  emacs
   fd
   ripgrep
-nerdfonts.override { fonts = [ "JetBrainsMono" "NerdFontsSymbolsOnly" ]; }
-
+ (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "NerdFontsSymbolsOnly" ]; })
+nixfmt
   nodejs
   alejandra
   ];
@@ -15,6 +15,8 @@ nerdfonts.override { fonts = [ "JetBrainsMono" "NerdFontsSymbolsOnly" ]; }
     (setq user-full-name "atlas"
           user-mail-address "user@example.com")
 
+   (setq doom-theme 'doom-one)
+(set-face-background 'default "#000000") 
 
 
     (setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 14))
