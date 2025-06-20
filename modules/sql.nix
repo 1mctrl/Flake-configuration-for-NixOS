@@ -4,7 +4,7 @@
   imports = [];
 
   config = {
-    networking.hostName = "alternative"; # Можешь убрать или заменить на свой
+#    networking.hostName = "alternative"; # Можешь убрать или заменить на свой
 
     services.postgresql = {
       enable = true;

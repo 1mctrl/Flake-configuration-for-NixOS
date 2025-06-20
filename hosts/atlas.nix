@@ -50,16 +50,8 @@ boot.loader.grub.enable = true;
 boot.loader.grub.efiSupport = false;
 boot.loader.grub.device = "/dev/nvme0n1"; 
 
-services.mysql.enable = false;
-services.mysql.package = pkgs.mysql80;
-
-
-  virtualisation.docker.enable = true;
-
-
-  users.users.atlas.extraGroups = [ "docker" ];
-
-
+virtualisation.docker.enable = true;
+users.users.atlas.extraGroups = [ "docker" ];
 
 services.upower.enable = true;
 
@@ -94,8 +86,7 @@ environment.systemPackages = with pkgs; [
 	tree
 	rustc
 	cargo
-	rofi	
-	mariadb
+	rofi
 	gcc
 	jdk17
 	cryptsetup
