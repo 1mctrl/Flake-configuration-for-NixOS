@@ -14,10 +14,7 @@
         local all all trust
         host all all 127.0.0.1/32 trust
       '';
-      initialScript = ''
-        CREATE ROLE atlas WITH LOGIN PASSWORD '123098';
-        CREATE DATABASE mydb OWNER myuser;
-      '';
+      initialScript = ./init.sql;
     };
 
     environment.systemPackages = with pkgs; [ postgresql_16 ];

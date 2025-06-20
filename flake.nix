@@ -24,6 +24,7 @@ nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
           ./modules/audio.nix
           ./modules/networking.nix
           ./users/atlas.nix
+          ./modules/init.sql
 
           home-manager.nixosModules.home-manager
           {
