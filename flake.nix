@@ -20,6 +20,7 @@ nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
         modules = [
           ./hosts/atlas.nix
           ./modules/bspwm.nix
+          ./modules/sql.nix
           ./modules/audio.nix
           ./modules/networking.nix
           ./users/atlas.nix

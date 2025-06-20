@@ -70,35 +70,17 @@
       "type": "display",
       "key": "{#separator}│  {#keys}󰹑    "
     },
+
     {
       "type": "shell",
       "key": "{#separator}│  {#keys}󰞷    "
     },
-  
-   {
-      "type": "de",
-      "key": "{#separator}│  {#keys}󰧨 DE"
-    },
+
     {
-      "type": "wm",
-      "key": "{#separator}│  {#keys}󱂬    "
-    },
-    {
-      "type": "wmtheme",
-      "key": "{#separator}│  {#keys}󰉼 Theme"
-    },
-    {
-      "type": "display",
-      "key": "{#separator}│  {#keys}󰹑    "
-    },
-    {
-      "type": "shell",
-      "key": "{#separator}│  {#keys}󰞷    "
-    },
-    {
-      "type": "terminalfont",
+     "type": "terminalfont",
       "key": "{#separator}│  {#keys}󰛖    "
     },
+
     {
       "type": "custom",
       "format": "{#1}│"

@@ -73,7 +73,6 @@ environment.systemPackages = with pkgs; [
 	upower
 	usbutils
 	pkgs.xorg.setxkbmap
-	koreader
 	wget
 	fprintd
 	btop
@@ -85,7 +84,8 @@ environment.systemPackages = with pkgs; [
 	sxhkd
 	flameshot
 	polybar
-	picom
+  foliate
+  picom
 	feh
 	librewolf
 	bibata-cursors
