@@ -8,7 +8,7 @@
 picom --config ~/.config/picom/picom.conf &
 kitty &
 sxhkd &
-feh --bg-scale ~/Downloads/wp3164319.png  &
+feh --bg-scale ~/temp/ibm.png &
 setxkbmap -layout us,ru -option 'grp:alt_shift_toggle' &
 
 
