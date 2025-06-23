@@ -2,7 +2,8 @@
 
 {
   home.packages = with pkgs; [
- emacs
+gnumake
+    emacs
   fd
   ripgrep
  (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "NerdFontsSymbolsOnly" ]; })
