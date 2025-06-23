@@ -2,7 +2,9 @@
 
 {
   home.packages = with pkgs; [
-gnumake
+pkg-config
+gcc
+    gnumake
     emacs
   fd
   ripgrep
