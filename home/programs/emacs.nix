@@ -18,27 +18,20 @@ tdlib
 
   home.file.".doom.d/config.el".text = ''
     (setq user-full-name "atlas"
-          user-mail-address "user@example.com")
+          user-mail-address "kefirzefir523@gmail.com")
 
    (setq doom-theme 'doom-one)
-(set-face-background 'default "#000000") 
+   (set-face-background 'default "#000000")
 
+    (setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 10))
 
-    (setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 14))
-
-
-    (setq doom-theme 'doom-one)
-    (setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 14))
     (setq-default default-directory "~/")
     (setq display-line-numbers-type 'relative)
-
+  (setq telega-server-libs-prefix "/run/current-system/sw")
 (use-package! telega
   :commands (telega)
   :config
-  (setq telega-server-libs-prefix "/nix/store/pzva4adbg5pdgifj76zpx31xf1jikr0z-tdlib-1.8.39"
-
-
-      telega-chat-fill-collum 80)
+  (setq telega-chat-fill-collum 80)
 )
 
 '';
