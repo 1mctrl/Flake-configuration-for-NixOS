@@ -8,8 +8,9 @@ gcc
     emacs
   fd
   ripgrep
- (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "NerdFontsSymbolsOnly" ]; })
-nixfmt
+pkgs.nerd-fonts.jetbrains-mono
+pkgs.nerd-fonts.nerd-fonts-symbols-only
+
   nodejs
 tdlib
  alejandra
