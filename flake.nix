@@ -9,7 +9,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     tdlib-src = {
-      url = "github:tdlib/td/1.8.44";
+      url = "git+https://github.com/tdlib/td.git";
       ref = "master";
       rev = "7b7f95c267e2aa13f43ae9f999347c67a5de44fc";
       flake = false;
