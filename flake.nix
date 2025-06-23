@@ -1,30 +1,18 @@
 {
-  description = "NixOS Supermacy System";
+  description = "NixOS Supermacy System with Telega and TDLib 1.8.44+";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     home-manager = {
-      url = "github:nix-community/home-manager/release-24.11";
+      url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-    tdlib-src = {
-   url = "git+https://github.com/tdlib/td.git?rev=7b7f95c267e2aa13f43ae9f999347c67a5de44fc";
-    flake = false;
     };
   };
 
-  outputs = { self, nixpkgs, flake-utils, home-manager, tdlib-src, ... }:
+  outputs = { self, nixpkgs, flake-utils, home-manager, ... }:
     let
       system = "x86_64-linux";
-      overlays = [
-        (final: prev: {
-          tdlib = prev.tdlib.overrideAttrs (old: {
-            version = "1.8.44";
-            src = tdlib-src;
-          });
-        })
-      ];
     in {
       nixosConfigurations.supermacy = nixpkgs.lib.nixosSystem {
         inherit system;
@@ -35,10 +23,6 @@
           ./modules/audio.nix
           ./modules/networking.nix
           ./users/atlas.nix
-
-          ({ config, pkgs, ... }: {
-            nixpkgs.overlays = overlays;
-          })
 
           home-manager.nixosModules.home-manager
           {
