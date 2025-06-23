@@ -31,7 +31,9 @@ tdlib
 (use-package! telega
   :commands (telega)
   :config
-  (setq telega-server-libs-prefix "/run/current-system/sw"
+  (setq telega-server-libs-prefix "/nix/store/pzva4adbg5pdgifj76zpx31xf1jikr0z-tdlib-1.8.39"
+
+
       telega-chat-fill-collum 80)
 )
 
