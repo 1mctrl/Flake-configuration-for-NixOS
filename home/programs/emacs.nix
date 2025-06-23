@@ -9,7 +9,7 @@ gcc
   fd
   ripgrep
 pkgs.nerd-fonts.jetbrains-mono
-pkgs.nerd-fonts.nerd-fonts-symbols-only
+
 
   nodejs
 tdlib
