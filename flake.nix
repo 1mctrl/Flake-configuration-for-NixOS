@@ -1,19 +1,30 @@
-
 {
   description = "NixOS Supermacy System";
 
   inputs = {
-nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
-  flake-utils.url = "github:numtide/flake-utils";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    flake-utils.url = "github:numtide/flake-utils";
+    home-manager = {
+      url = "github:nix-community/home-manager/release-24.11";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    tdlib-src = {
+      url = "github:tdlib/td/1.8.44";
+      flake = false;
+    };
+  };
 
-  home-manager = {
-    url = "github:nix-community/home-manager/release-24.11";
-    inputs.nixpkgs.follows = "nixpkgs"; 
- };
-};
-  outputs = { self, nixpkgs, flake-utils, home-manager, ... }:
+  outputs = { self, nixpkgs, flake-utils, home-manager, tdlib-src, ... }:
     let
       system = "x86_64-linux";
+      overlays = [
+        (final: prev: {
+          tdlib = prev.tdlib.overrideAttrs (old: {
+            version = "1.8.44";
+            src = tdlib-src;
+          });
+        })
+      ];
     in {
       nixosConfigurations.supermacy = nixpkgs.lib.nixosSystem {
         inherit system;
@@ -25,12 +36,15 @@ nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
           ./modules/networking.nix
           ./users/atlas.nix
 
+          ({ config, pkgs, ... }: {
+            nixpkgs.overlays = overlays;
+          })
 
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-	    home-manager.backupFileExtension = "backup";
+            home-manager.backupFileExtension = "backup";
             home-manager.users.atlas = import ./home/atlas.nix;
           }
         ];
