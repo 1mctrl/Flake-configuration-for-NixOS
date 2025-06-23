@@ -95,7 +95,7 @@ environment.systemPackages = with pkgs; [
 	networkmanager
 	clang
 	networkmanager_dmenu
-	
+	xfce.thunar
 ];
 
 system.stateVersion = "24.11";

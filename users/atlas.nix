@@ -20,7 +20,7 @@ packages = with pkgs; [
 	blender
  	mariadb
  	dbus
- 	dolphin
+
 
 	zip
 
