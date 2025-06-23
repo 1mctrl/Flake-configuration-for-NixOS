@@ -8,7 +8,8 @@
  (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "NerdFontsSymbolsOnly" ]; })
 nixfmt
   nodejs
-  alejandra
+tdlib
+ alejandra
   ];
 
   home.file.".doom.d/config.el".text = ''
@@ -26,7 +27,15 @@ nixfmt
     (setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 14))
     (setq-default default-directory "~/")
     (setq display-line-numbers-type 'relative)
-  '';
+
+(use-package! telega
+  :commands (telega)
+  :config
+  (setq telega-server-libs-prefix "/run/current-system/sw"
+      telega-chat-fill-collum 80)
+)
+
+'';
 
   home.file.".doom.d/init.el".text = ''
     (doom!
@@ -45,11 +54,13 @@ nixfmt
      :lang
      (nix +lsp)
      (c +lsp)
+     :app
+     telega
      :config
      (default +bindings +smartparens))
   '';
 
   home.file.".doom.d/packages.el".text = ''
-    ;; Дополнительные пакеты можешь добавлять сюда
+    (package! telega)
   '';
 }
