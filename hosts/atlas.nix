@@ -64,7 +64,8 @@ memoryPercent = 50; };
 environment.systemPackages = with pkgs; [
 	docker
 	imagemagick
-	upower
+  tdlib
+  upower
 	usbutils
 	pkgs.xorg.setxkbmap
 	wget

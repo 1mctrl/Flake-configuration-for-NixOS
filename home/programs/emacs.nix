@@ -2,18 +2,16 @@
 
 {
   home.packages = with pkgs; [
-pkg-config
-gcc
+    pkg-config
+    gcc
     gnumake
     emacs
-  fd
-  ripgrep
-pkgs.nerd-fonts.jetbrains-mono
-
-
-  nodejs
-tdlib
- alejandra
+    fd
+    ripgrep
+    pkgs.nerd-fonts.jetbrains-mono
+    nodejs
+    tdlib
+    alejandra
   ];
 
   home.file.".doom.d/config.el".text = ''
@@ -27,8 +25,10 @@ tdlib
 
     (setq-default default-directory "~/")
     (setq display-line-numbers-type 'relative)
-  (setq telega-server-libs-prefix "/run/current-system/sw")
-(use-package! telega
+
+    (setq telega-server-libs-prefix "/run/current-system/sw")
+
+    (use-package! telega
   :commands (telega)
   :config
   (setq telega-chat-fill-collum 80)
