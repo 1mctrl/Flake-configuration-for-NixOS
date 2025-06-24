@@ -64,6 +64,7 @@ memoryPercent = 50; };
 environment.systemPackages = with pkgs; [
 	docker
 	imagemagick
+  emacs
   tdlib
   upower
 	usbutils

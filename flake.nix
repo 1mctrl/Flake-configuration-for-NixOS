@@ -1,5 +1,5 @@
 {
-  description = "NixOS Supermacy System with Telega and TDLib 1.8.44+";
+  description = "NixOS Supermacy System ";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
