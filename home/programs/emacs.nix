@@ -26,7 +26,7 @@
     (setq-default default-directory "~/")
     (setq display-line-numbers-type 'relative)
 
-    (setq telega-server-libs-prefix "/run/current-system/sw")
+    (setq telega-server-libs-prefix "/nix/store/8dl2snrlm20h28nqvf2rx4j8mq49yyn2-tdlib-1.8.49" )
 
     (use-package! telega
   :commands (telega)
