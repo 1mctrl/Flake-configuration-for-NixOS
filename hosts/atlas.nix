@@ -74,6 +74,7 @@ environment.systemPackages = with pkgs; [
 	btop
 	pkgs.pulsemixer
 	pkgs.pamixer
+  prismlauncher
 	kitty
 	xorg.xev
 	bspwm

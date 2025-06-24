@@ -5,7 +5,7 @@
     pkg-config
     gcc
     gnumake
-    emacs-gtk
+    emacs
     fd
     ripgrep
     pkgs.nerd-fonts.jetbrains-mono
