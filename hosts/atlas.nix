@@ -102,7 +102,7 @@ environment.systemPackages = with pkgs; [
 	xfce.thunar
 ];
 
-system.stateVersion = "24.11";
+#system.stateVersion = "24.11";
 security.rtkit.enable = true;
 services.printing.enable = true;
 }
