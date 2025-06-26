@@ -68,7 +68,7 @@ environment.systemPackages = with pkgs; [
   tdlib
   upower
 	usbutils
-  kicad
+  kicad-unstable
 	pkgs.xorg.setxkbmap
 	wget
 	fprintd
