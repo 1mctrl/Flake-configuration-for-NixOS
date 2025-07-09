@@ -55,7 +55,7 @@ virtualisation.docker.enable = true;
 users.users.atlas.extraGroups = [ "docker" ];
 
 virtualisation.libvirtd.enable = true;
-users.users.atlas.extraGroup = ["libvirtd"];
+users.users.atlas.extraGroups = ["libvirtd"];
 services.upower.enable = true;
 
 zramSwap = {
