@@ -54,7 +54,7 @@ boot.loader.grub.device = "/dev/nvme0n1";
 virtualisation.docker.enable = true;
 users.users.atlas.extraGroups = [ "docker" ];
 
-virtualisation.libvirt.enable = true;
+virtualisation.libvirtd.enable = true;
 users.users.atlas.extraGroup = ["libvirtd"];
 services.upower.enable = true;
 
