@@ -13,7 +13,6 @@
     environment.systemPackages = with pkgs; [
       bspwm
       sxhkd
-      xterm
       dmenu
       rofi
       #polybar

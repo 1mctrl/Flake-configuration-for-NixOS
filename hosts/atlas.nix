@@ -54,7 +54,8 @@ boot.loader.grub.device = "/dev/nvme0n1";
 virtualisation.docker.enable = true;
 users.users.atlas.extraGroups = [ "docker" ];
 
-
+virtualisation.libvirt.enable = true;
+users.users.atlas.extraGroup = ["libvirtd"]
 services.upower.enable = true;
 
 zramSwap = {
@@ -67,6 +68,7 @@ environment.systemPackages = with pkgs; [
   emacs
   tdlib
   upower
+  qemu
 	usbutils
   kicad-unstable
 	pkgs.xorg.setxkbmap

@@ -4,7 +4,7 @@
   imports = [];
 
   config = {
-#    networking.hostName = "alternative"; # Можешь убрать или заменить на свой
+
 
     services.postgresql = {
       enable = true;
@@ -22,6 +22,6 @@
 
     environment.systemPackages = with pkgs; [ postgresql_16 ];
 
-    system.stateVersion = "24.11"; # Версия системы, корректируй под свою
+
   };
 }
