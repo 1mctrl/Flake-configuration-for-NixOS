@@ -52,10 +52,10 @@ boot.loader.grub.device = "/dev/nvme0n1";
 
 
 virtualisation.docker.enable = true;
-users.users.atlas.extraGroups = [ "docker" ];
+users.users.atlas.extraGroups = [ "docker" "libvirtd" ];
 
 virtualisation.libvirtd.enable = true;
-users.users.atlas.extraGroups = ["libvirtd"];
+
 services.upower.enable = true;
 
 zramSwap = {
