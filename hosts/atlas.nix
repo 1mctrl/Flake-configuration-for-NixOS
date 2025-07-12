@@ -63,6 +63,8 @@ enable = true;
 memoryPercent = 50; };
 
 environment.systemPackages = with pkgs; [
+  arduino-ide
+  steam-run
 	docker
 	imagemagick
   emacs
