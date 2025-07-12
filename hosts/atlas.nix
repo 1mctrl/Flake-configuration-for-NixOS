@@ -52,7 +52,7 @@ boot.loader.grub.device = "/dev/nvme0n1";
 
 
 virtualisation.docker.enable = true;
-users.users.atlas.extraGroups = [ "docker" "libvirtd" ];
+users.users.atlas.extraGroups = [ "docker" "libvirtd" "dialout" "wheel" ];
 
 virtualisation.libvirtd.enable = true;
 
