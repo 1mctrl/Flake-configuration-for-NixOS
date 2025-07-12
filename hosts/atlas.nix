@@ -64,6 +64,7 @@ memoryPercent = 50; };
 
 environment.systemPackages = with pkgs; [
   arduino
+  wmname
   steam-run
 	docker
 	imagemagick
