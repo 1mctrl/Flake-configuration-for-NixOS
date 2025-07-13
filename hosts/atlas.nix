@@ -73,7 +73,7 @@ environment.systemPackages = with pkgs; [
   upower
   qemu
 	usbutils
-  kicad-unstable
+  kicad
 	pkgs.xorg.setxkbmap
 	wget
 	fprintd
