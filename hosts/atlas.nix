@@ -66,48 +66,48 @@ environment.systemPackages = with pkgs; [
   arduino
   wmname
   steam-run
-	docker
-	imagemagick
+  docker
+  imagemagick
   emacs
   tdlib
   upower
   qemu
-	usbutils
-  kicad
-	pkgs.xorg.setxkbmap
-	wget
-	fprintd
-	btop
-	pkgs.pulsemixer
-	pkgs.pamixer
+  usbutils
+  kicad-unstable
+  pkgs.xorg.setxkbmap
+  wget
+  fprintd
+  btop
+  pkgs.pulsemixer
+  pkgs.pamixer
   prismlauncher
-	kitty
-	xorg.xev
-	bspwm
-	sxhkd
-	flameshot
-	polybar
+  kitty
+  xorg.xev
+  bspwm
+  sxhkd
+  flameshot
+  polybar
   foliate
   picom
-	feh
-	librewolf
-	bibata-cursors
-	git
-	fastfetch
-	tree
-	rustc
-	cargo
-	rofi
-	gcc
-	jdk17
-	cryptsetup
-	networkmanager
-	clang
-	networkmanager_dmenu
-	xfce.thunar
+  feh
+  librewolf
+  bibata-cursors
+  git
+  fastfetch
+  tree
+  rustc
+  cargo
+  rofi
+  gcc
+  jdk17
+  cryptsetup
+  networkmanager
+  clang
+  networkmanager_dmenu
+  xfce.thunar
 ];
 
-#system.stateVersion = "24.11";
+
 security.rtkit.enable = true;
 services.printing.enable = true;
 }
