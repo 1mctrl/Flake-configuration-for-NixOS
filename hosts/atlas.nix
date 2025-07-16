@@ -66,6 +66,7 @@ environment.systemPackages = with pkgs; [
   arduino
   wmname
   steam-run
+  dmidecode
   docker
   imagemagick
   emacs
