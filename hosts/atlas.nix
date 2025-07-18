@@ -44,7 +44,8 @@ nixpkgs.config.allowUnfree = true;
 
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-
+hardware.opengl.driSupport32Bit = true;
+programs.steam.enable = true;
 
 boot.loader.grub.enable = true;
 boot.loader.grub.efiSupport = false;
