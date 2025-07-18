@@ -63,6 +63,7 @@ enable = true;
 memoryPercent = 50; };
 
 environment.systemPackages = with pkgs; [
+  openttd
   arduino
   wmname
   steam-run
