@@ -106,7 +106,7 @@ environment.systemPackages = with pkgs; [
   cryptsetup
   networkmanager
   clang
-  staem
+  steam
   networkmanager_dmenu
   xfce.thunar
 ];
