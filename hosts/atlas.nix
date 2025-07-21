@@ -24,7 +24,7 @@ fileSystems."/" = {
   fsType = "ext4";
 };
 
-    
+boot.kernelModules = [ "8188eu" ];
 
 time.timeZone = "Asia/Tashkent";
 i18n.defaultLocale = "en_US.UTF-8";
