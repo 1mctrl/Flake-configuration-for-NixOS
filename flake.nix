@@ -18,7 +18,7 @@
         inherit system;
         modules = [
           ./hosts/atlas.nix
-          ./modules/rtl8188eu.nix
+
           ./modules/bspwm.nix
           ./modules/sql.nix
           ./modules/audio.nix

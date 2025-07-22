@@ -44,7 +44,7 @@ nixpkgs.config.allowUnfree = true;
 
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-hardware.opengl.driSupport32Bit = true;
+hardware.graphics.enable32Bit = true;
 programs.steam.enable = true;
 
 boot.loader.grub.enable = true;
@@ -88,6 +88,7 @@ environment.systemPackages = with pkgs; [
   xorg.xev
   bspwm
   sxhkd
+  pkgs.linuxHeaders
   flameshot
   polybar
   foliate
