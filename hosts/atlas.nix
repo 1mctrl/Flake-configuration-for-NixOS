@@ -108,6 +108,7 @@ environment.systemPackages = with pkgs; [
   networkmanager
   clang
   steam
+  kooha
   networkmanager_dmenu
   xfce.thunar
 ];
