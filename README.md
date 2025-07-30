@@ -14,6 +14,9 @@ Alternative personal configuration of my NixOS system using Nix Flakes.
 ├── modules/              # Reusable NixOS modules
 ├── users/                # User-specific configurations
 ```
+![-5210914315513755358_121](https://github.com/user-attachments/assets/748db0a0-be8f-4747-afc6-83f760e0b794)
+
+![-5210914315513755359_121](https://github.com/user-attachments/assets/00f3c53a-e9da-4b27-800c-2cde54b1b74e)
 
 ## Features
 
