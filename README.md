@@ -1,7 +1,8 @@
 # flake_nix
 
 Alternative personal configuration of my NixOS system using Nix Flakes.
-(ctualy this config was not supposed to be public, specified only for me, however you can do changes if you want)
+
+(actualy this config was not supposed to be public, specified only for me, however you can do changes if you want)
 ## Repository Structure
 
 ```
