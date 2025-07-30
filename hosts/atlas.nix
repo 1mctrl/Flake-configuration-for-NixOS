@@ -26,7 +26,7 @@ fileSystems."/" = {
 
 
 
-time.timeZone = "Asia/Tashkent";
+time.timeZone = "#set_timezone";
 i18n.defaultLocale = "en_US.UTF-8";
 
 fonts = {
