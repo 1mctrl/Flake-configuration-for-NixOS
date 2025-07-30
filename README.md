@@ -36,6 +36,10 @@ nixos-rebuild switch --flake .#hostname
 
 Replace `hostname` with the name of your defined system in the `hosts/` directory.
 
+## Dotfiles / Environment Configs
+
+My user environment configs (bspwm, kitty, etc.) are in a separate repository:  
+👉 [dotfiles-bspwm](https://github.com/1mctrl/my_configs.git)
 ## License
 
 This project is for personal use. No explicit license is attached.
